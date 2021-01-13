@@ -197,13 +197,6 @@ a:hover,a:focus{
     color: #ffffff;
     
 }
-.triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid red;
-}
 
 /**
 <div class="triangle-up"></div>
@@ -228,10 +221,16 @@ margin-right: 10px;
 
 }
 .bannerHero::after{
-    content: url(../img/tri.png);
+    content: '';
     position: relative;
-    bottom: -35px;
-    left:167%;    
+    bottom:-20px;
+    left: 160%;
+    width: 0; 
+    height: 0; 
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    
+    border-bottom: 150px solid #fff;
 }
 .bannerHero.grid p{
     align-self: start;
@@ -317,6 +316,18 @@ margin-right: 10px;
 }
 .footer .container ul li a:hover{
     color:#fff;
+}
+.parallax::before{
+    content: '';
+    position: relative;
+    top:50px;
+    left:150px;
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    
+    border-top: 50px solid #fff;
 }
 /**Tablet Mode***/
 @media (max-width:786px){
