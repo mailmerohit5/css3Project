@@ -331,7 +331,30 @@ margin-right: 10px;
 }
 /**Tablet Mode***/
 @media (max-width:786px){
-    body,.container{
-        background-color:red;
+    .container{
+        max-width: 90%;
+        margin: auto;
     }
+  .grid2,.grid{
+      grid-template-columns: 1fr;
+  }
+  .flex{
+      flex-direction: column;
+  }
+  img{
+      width: 100%;
+  }
+  body{
+      font-size: 0.8em;
+  }
+  .card{
+      align-self: center;
+      justify-content: center;
+  }
+  .card:last-child{
+      grid-column: 1;
+  }
+  .footer .container ul{
+      justify-self: center;
+  }
 }
